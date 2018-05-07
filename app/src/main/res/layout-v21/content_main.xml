@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f5efb6"
+        app:borderWidth="0dp"
+        android:layout_gravity="end|bottom"
+        app:elevation="6dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/plus" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/memo"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        android:backgroundTint="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/note"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/setting"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        app:borderWidth="0dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/setting"
+        />
+</android.support.design.widget.CoordinatorLayout>
+
+
