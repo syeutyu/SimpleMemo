@@ -9,14 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.lee.myapplication.Domain.MemoItem;
+
 import java.util.List;
 
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-   private List<RecyclerItem> list;
+   private List<MemoItem> list;
 
-    public Adapter(List<RecyclerItem> list){
+    public Adapter(List<MemoItem> list){
         this.list = list;
     }
 
